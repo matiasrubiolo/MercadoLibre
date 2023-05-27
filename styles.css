@@ -189,6 +189,7 @@ header .bottom .envio span{
     font-size: 1.5em;
     border: none;
     background-color: #fff;
+    color: #ccc;
 }
 .info h2{
     width: 80%;
@@ -260,7 +261,7 @@ header .bottom .envio span{
     margin-top: 5px;
     font-size: 1em;
 }
-.caracteristicas p,.preguntas form{
+.caracteristicas p,.preguntas input{
     margin-top: 10px;
 }
 .preguntas input{
@@ -280,11 +281,16 @@ header .bottom .envio span{
 .preguntas p{
     margin-left: 5%;
     margin-top: 10px;
+    text-align: start;
 }
 .preguntas p span{
     color: #888;
     margin-left: 10px;
     display: inline-block;
+}
+.preguntas #comentario{
+    margin-left: 0%;
+    margin-top: 10px;
 }
 .comentarios p{
     margin-top: 10px;
