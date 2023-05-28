@@ -1,14 +1,23 @@
-window.onload = iniciar;
-function iniciar(){
+document.addEventListener("DOMContentLoaded", function() {
     let pregunta = document.getElementById("enviar");
-    pregunta.addEventListener("click",comentarios);
+    if(pregunta){
+        pregunta.addEventListener("click",comentarios);
+    }
 
     let favorito = document.getElementById("favorito");
-    favorito.addEventListener("click",misfavorito);
+    if(favorito){
+        favorito.addEventListener("click",misfavorito);
+    }
 
     let buttonbuscador = document.getElementById("buttonBuscador");
     buttonbuscador.addEventListener("click",buscador);
-}
+    cargarcantidad();
+});
+
+async function cargarcantidad() {
+    let json = await cargarurl("https://my-json-server.typicode.com/agustinruatta/fake_json_server_db/statistics");
+    document.getElementById("cantidad").textContent = json.amount_of_products;
+  }
 
 let comentarios = () =>{
     let comentario = document.getElementById("pregunta").value;
@@ -38,10 +47,15 @@ let misfavorito = () => {
 let buscador = () =>{
     let textobuscador = document.getElementById("buscador").value;
 
-    if(buscador === ""){
-        buscador.focus();
+    if (textobuscador === "") {
+        document.getElementById("buscador").focus();
         document.getElementById("buscador").style.border = "1px solid #3483fa";
-    }else{
+    } else {
         window.location.href = "buscador.html?busqueda=" + textobuscador;
     }
+}
+
+async function cargarurl(url) {
+    let response = await fetch(url);
+    return response.json();
 }

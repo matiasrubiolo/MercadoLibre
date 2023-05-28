@@ -6,6 +6,7 @@ body{
     background-color: #ededed;
     width:100vw;
     height:100vh;  
+    overflow-x: hidden;
 }
 header{
     padding: 4px 0;
@@ -77,13 +78,13 @@ header .bottom .envio span{
     height: auto;
     min-height: 100%;
 }
-.grilla{
+.main .grilla{
     display: grid;
     grid-template-columns: 18% 18% 18% 18% 18%;
     grid-gap: 8px;
     justify-content: center;
 }
-.articulo{
+.main .grilla .articulo{
     grid-column: 1;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -94,41 +95,41 @@ header .bottom .envio span{
     text-decoration: none;
     color: #000;
 }
-.articulo img{
+.main .grilla .articulo img{
     width: 100%;
 }
-.articulo .divider{
+.main .grilla  .articulo .divider{
     width: 100%;
     height: 1px;
     background-color: #ccc;
     margin-left: 0%;
 }
-.articulo .price{
+.main .grilla  .articulo .price{
     margin-top: 15px;
     font-size: 1.5em;
     font-weight: bold;
 }
-.articulo .price span{
+.main .grilla .articulo .price span{
     font-weight: 400;
     font-size: .8em;
     color: #139251;
 }
-.articulo .envio{
+.main .grilla .articulo .envio{
     margin-top: 10px;
     margin-bottom: 8px;
     color: #139251;
 }
-.articulo .title{
+.main .grilla  .articulo .title{
     width: 90%;
     text-align: justify;
     font-size: .9em;
     visibility: hidden;
 }
-.articulo:hover{
+.main .grilla  .articulo:hover{
     padding-bottom: 20px;
     box-shadow: 5px 5px 5px #888888;
 }
-.articulo:hover .title{
+.main .grilla  .articulo:hover .title{
     visibility: visible;
 }
 
@@ -299,4 +300,56 @@ header .bottom .envio span{
 .comentarios i{
     font-size: .8em;
     color: #3483fa;
+}
+
+
+/*Busqueda*/
+.contenedor{
+    margin-top:120px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 20% 70%;
+}
+.contenedor .filtros{
+    grid-column:1;
+}
+.contenedor .filtros ul{
+    list-style: none;
+    padding: 10px 0;
+}
+.contenedor .filtros li{
+    margin-left: 10px;
+    color: #444;
+}
+.contenedor .busqueda{
+    grid-column: 2;
+}
+.contenedor .busqueda .box{
+    min-height: 250px;
+    background-color: #fff;
+}
+.contenedor .busqueda a{
+    color: #000;
+    text-decoration: none;
+}
+.contenedor .busqueda .articulo{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.contenedor .busqueda .articulo img{
+    margin-top: 30px;
+    width: 30%;
+}
+.contenedor .busqueda .articulo .title{
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+.contenedor .busqueda .articulo .price{
+    margin-top: 10px;
+    font-size: 1.9em;
+}
+.contenedor .busqueda .articulo .envio{
+    margin-top: 10px;
+    color: #139251;
 }
