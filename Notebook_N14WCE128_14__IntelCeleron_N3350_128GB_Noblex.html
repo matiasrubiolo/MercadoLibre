@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5dc3ef515d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p class="id" id="id">3</p>
+    <header>
+        <a href="index.html">
+            <img src="https://logodownload.org/wp-content/uploads/2018/10/mercado-libre-logo.png" alt="Logo mercado libre">
+        </a>
+        <div class="buscador">
+            <input type="text" id="buscador" placeholder="Busca productos, marcas y mas...">
+            <button id="buttonBuscador"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <p class="ofertas"><i class="fa-solid fa-tag"></i> Ofertas por tiempo limitado</p>
+        <p class="envio"><i class="fa-solid fa-location-dot"></i> <span>Enviar a Matias</span> <br>Belgrano 2248</p>
+        <div class="nav">
+            <ul>
+                <li>Categorias <i class="fa-solid fa-angle-down"></i></li>
+                <li>Ofertas</li>
+                <li>Historial</li>
+                <li>Supermercado</li>
+                <li>Moda</li>
+                <li>Vender</li>
+                <li>Ayuda</li>
+            </ul>
+        </div>
+        <div class="perfil">
+            <ul>
+                <li><i class="fa-solid fa-user"></i> Matias <i class="fa-solid fa-angle-down"></i></li>
+                <li>Mis Compras</li>
+                <li>Favoritos <i class="fa-solid fa-angle-down"></i></li>
+                <li><i class="fa-solid fa-bell"></i></li>
+                <li><i class="fa-sharp fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <p class="primerP">Tambien puede interesarte: <a href="#">apple macbook</a> - <a href="#">hp pavillon 14</a></p>
+        <p class="segundoP"><a href="#">Volver al listado</a> | <a href="#">Computacion</a> > <a href="#">Laptops y Accesorios</a></p>
+        <div class="product">
+            <div class="principal">
+                <img id="img" alt="preview notebook">
+                <div class="info">
+                    <div class="topinfo">
+                        <p>Nuevo | +500 vendidos</p>
+                        <button id="favorito"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                    <h2 id="title"></h2>
+                    <p class="valoracion"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> (25)</p>
+                    <select id="ram">
+                        <option value="Seleccione">Seleccion una opcion</option>
+                        <option value="8GB">8GB RAM</option>
+                        <option value="16GB">16GB RAM</option>
+                    </select>
+                    <h1 id="price"></h1>
+                </div>
+                <div class="optionCompra">
+                    <p class="llegada"><i class="fa-solid fa-truck"></i> Llega gratis entre el jueves y el viernes <br><span><i class="fa-solid fa-location-dot"></i> Enviar 9 de Julio 1647</span></p>
+                    <p>Stock disponible</p>
+                    <button class="compra">Comprar ahora</button>
+                    <button class="carrito">Agregar al carrito</button>
+                    <p><i class="fa-solid fa-arrow-turn-down-left"></i> <span class="color">Devolucion gratis.</span>Tenés 30 días desde que lo recibís.</p>
+                    <p><i class="fa-solid fa-shield-check"></i><span class="color">Compra protegida</span>, recibí el producto que esperabas o te devolvemos tu dinero.</p>
+                    <p><i class="fa-solid fa-trophy"></i><span class="color">Mercado Puntos.</span> Sumás 2571 puntos.</p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="caracteristicas">
+                <h3>Características del producto</h3>
+                <p id="description"></p>
+                <p>Puedes obtener mas informacion del fabricante en <a id="linkfabricante" target="_blank" rel="noreferrer"></a></p>   
+            </div>
+            <div class="divider"></div>
+            <div class="preguntas">
+                <h2>Preguntas y respuestas</h2>
+                <input id="pregunta" type="text" placeholder="Escribi una pregunta o palabra clave...">
+                <button id="enviar">Preguntar</button>
+                <p id="comentario"></p>
+                <p>Se puede expandir la memoria ram a 12gb?<br><span><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i> Hola CONTROLGESTION, muchas gracias por su consulta. No Cualquier otra duda quedamos a tu disposición. Tienda Oficial Atajo</span></p>
+            </div>
+            <div class="divider"></div>
+            <div class="comentarios">
+                <h2>Opiniones del producto</h2>
+                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><br>Hasta el momento, todo perfecto. Instale todos programas que necesito, soy diseñadora y la note responde muy rápido.</p>
+                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><br>Me encanto , la ame.</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
